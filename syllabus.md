@@ -4,6 +4,21 @@
 ## I. Course Catalog Description 
 *This course provides students the opportunity to continue the exploration of Media Rich Internet Applications (MRIAs).  Topics include communications for media ecologies, distributed web application frameworks, advanced interactivity, data transformation, representation, automation, persistence, and large scale systems deployment.  In addition, students are exposed to concepts and technologies related to the next generation of MRIA development.*
 
+
+### Topics
+- Publishing to Heroku
+- Version Control/GitHub
+- Linting / Continuous Integration (CircleCI)
+- Servers/HTTP Protocol (methods, headers, passing data)
+- Maintaining state with HTTP Sessions
+- Persistent Storage / Non-relational DB (e.g. Mongo & Mongoose)
+- Form Submission
+- Ajax
+- Creating accounts & a user login system
+- Distributed Systems (Redis)
+- MVC
+- React Framework
+
 <hr>
 
 ## II. Prerequisites
