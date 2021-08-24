@@ -1,5 +1,5 @@
 # IGME-430 Rich Media Web Application Development II. 
-## Spring 2021: Syllabus
+## Fall 2021: Syllabus
 
 ## I. Course Catalog Description 
 *This course provides students the opportunity to continue the exploration of Media Rich Internet Applications (MRIAs).  Topics include communications for media ecologies, distributed web application frameworks, advanced interactivity, data transformation, representation, automation, persistence, and large scale systems deployment.  In addition, students are exposed to concepts and technologies related to the next generation of MRIA development.*
