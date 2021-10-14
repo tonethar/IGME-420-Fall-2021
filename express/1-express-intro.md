@@ -62,7 +62,7 @@
 ## III. Create some hard-coded data
 
 - You can get some fake JSON data from https://www.mockaroo.com/
-- Just use the `id`, `first_name` & `last_name` fields - delete the others
+- Just use the `id`, `first_name` & `last_name` fields - delete the others (Note: the newer UI of the app has the **Download Data** and **Preview** buttons pinned to the bottom of the screen)
 - Now export the JSON - 50 or 100 records is enough
 - We will store this hard-coded data as just a regular JS array of object literals
 - Create **src/data/user-data.js** file:
