@@ -45,7 +45,7 @@
   - although that's a clunky endpoint!
 - so let's serve it on **'/add-user-form.html'** instead:
   - head to **server.js** and add a `GET` endpoint - `app.get('/add-user-form.html', ...),`
-  - then test it at `http://localhost:3000/add-user-form.html` to be sure you did it right
+  - then test it at http://localhost:3000/add-user-form.html to be sure you did it right
 
 <hr>
 
