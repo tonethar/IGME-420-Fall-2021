@@ -41,7 +41,7 @@
 </html>
 ```
 
-- now head to `http://localhost:3000/assets/html/add-user-form.html` - the form should be visible because of `express.static()` serving it for us:
+- now head to http://localhost:3000/assets/html/add-user-form.html - the form should be visible because of `express.static()` serving it for us:
   - although that's a clunky endpoint!
 - so let's serve it on **'/add-user-form.html'** instead:
   - head to **server.js** and add a `GET` endpoint - `app.get('/add-user-form.html', ...),`
