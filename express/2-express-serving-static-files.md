@@ -49,6 +49,7 @@
 ![screenshot](_images/express-3.png)
 
 - You will also have to import `path` like this - `import path from 'path';`
+- FYI Here is the [`path.resolve()`](https://nodejs.org/api/path.html#pathresolvepaths) documentation
 - Head to `http://localhost:3000/` - **home.html** should load, but the image isn't showing, nor are styles being applied, it will look like this:
 
 
