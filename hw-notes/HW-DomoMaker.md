@@ -197,6 +197,7 @@ B) Documentation
 ### III-A. Tips & Assignment Walkthrough
 
 **step #3**
+- the `mongooseOptions` parameter can be deleted (it is redundant code from a previous version of this assignment)
 - explain array destructuring and what this code is doing:
 
 ```js
