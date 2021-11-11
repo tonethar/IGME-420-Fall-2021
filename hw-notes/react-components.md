@@ -137,6 +137,8 @@ const init = () => {
     document.querySelector("#app")
   );
 };
+
+window.onload = init;
 ```
 
 - `npm run buildExample3`
