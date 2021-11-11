@@ -264,16 +264,24 @@ $("#domoAge").val("");
     - B) adding a new feature to the app (such as a delete button, or a new page to render
 
 ### Tips
-- "A" above should be pretty straightforward, but "B" will be trickier
-- To add event handling to a React component:
-  - use the `onClick` attribute like this `onClick={handleClick}`, and then create the `handleClick()` function normally
-  - if there are parameters to pass along, you could wrap `handleClick` above in an anonymous function like this `onClick={()=>handleClick(args)}`, OR
-  - store the parameters as attributes on the component, and then access them on the event handler function with something like this `e.currentTarget.getAttribute('attributeName')`
-- You will likely need to create a new endpoint (for example, **/all-users** or **/delete-domo**) - this means you will have to pass body data that includes the current value of `_csrf` everytime you call this new endpoint
-- One issue with this is that Postman won't be very helpful for debugging because of the need for the `_csrf` value
-- If you are using `jQuery.ajax()` to call the new endpoint from the client-side:
-  - you can grab the `_csrf` value from the hidden form field using `const _csrf = document.querySelector("some-selector").value;`
-  - and then pass the token along with any other data like this `const postData = "_csrf=Z6vP0rP...&anotherVariable=anotherValue&...";`
+- "A" above should be pretty straightforward- here are some recommendations:
+  - because your `Domo` *schema* will be changing, create a new database named `DomoMakerE` (do this in **app.js**)
+  - when working on this section, proceeed from "the bottom up" - for example:
+    - add an attribute such as `level` to the Domo schema, and give it a default value like we did with `createdDate`
+    - fire up DomoMaker-E and create some new Domos
+    - verify that you can still make Domos and that this new attribute is being created by checking the `domos` collection in the `DomoMakerE` database in MongoDB Compass
+    - now rewrite the `domoNodes` code in **client/app/maker.js** to display this new attribute
+    - finally, write all of the client and server-side code necessary to display a new form field for this attribute, and to send it to the server when the **Make Domo** button is clicked
+- "B" will be trickier - a "delete domo" button would be very useful, or maybe a page that shows all of the users
+  - To add event handling to a React component:
+    - use the `onClick` attribute like this `onClick={handleClick}`, and then create the `handleClick()` function normally
+    - if there are parameters to pass along, you could wrap `handleClick` above in an anonymous function like this `onClick={()=>handleClick(args)}`, OR
+    - store the parameters as attributes on the component, and then access them on the event handler function with something like this `e.currentTarget.getAttribute('attributeName')`
+  - You will likely need to create a new endpoint (for example, **/all-users** or **/delete-domo**) - this means you will have to pass body data that includes the current value of `_csrf` everytime you call this new endpoint
+  - One issue with this is that Postman won't be very helpful for debugging because of the need for the `_csrf` value
+  - If you are using `jQuery.ajax()` to call the new endpoint from the client-side:
+    - you can grab the `_csrf` value from the hidden form field using `const _csrf = document.querySelector("some-selector").value;`
+    - and then pass the token along with any other data like this `const postData = "_csrf=Z6vP0rP...&anotherVariable=anotherValue&...";`
 
 
 
