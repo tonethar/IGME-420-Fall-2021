@@ -275,10 +275,6 @@ $("#domoAge").val("");
 
 <hr>
 
-![screenshot](_images/hw-18.png)
-
-<hr>
-
 - "B" will be trickier - a "delete domo" button would be very useful, or maybe a page that shows all of the users
   - To add event handling to a React component:
     - use the `onClick` attribute like this `onClick={handleClick}`, and then create the `handleClick()` function normally
@@ -292,7 +288,7 @@ $("#domoAge").val("");
 
 <hr>
 
-![screenshot](_images/hw-19.png)
+![screenshot](_images/hw-18.png)
 
 <hr>
 
