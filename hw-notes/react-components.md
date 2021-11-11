@@ -182,6 +182,13 @@ const loadSongsFromServer = () => {
 ```
 - and call it from `init()`
 
+<hr>
+
+- The info about the two songs should now be rendered to the page
+- However, you WILL see a warning from React in the web inspector - let's fix this issue!
+
+<hr>
+
 <a id="class-component" />
 
 <hr>  
