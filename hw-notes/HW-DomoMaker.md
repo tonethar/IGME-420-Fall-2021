@@ -275,7 +275,7 @@ $("#domoAge").val("");
 
 <hr>
 
-![screenshot](_images/)
+![screenshot](_images/hw-18.png)
 
 <hr>
 
@@ -290,7 +290,11 @@ $("#domoAge").val("");
     - you can grab the `_csrf` value from the hidden form field using `const _csrf = document.querySelector("some-selector").value;`
     - and then pass the token along with any other data like this `const postData = "_csrf=Z6vP0rP...&anotherVariable=anotherValue&...";`
 
+<hr>
 
+![screenshot](_images/hw-19.png)
+
+<hr>
 
 <a id="p2"></a>
 
