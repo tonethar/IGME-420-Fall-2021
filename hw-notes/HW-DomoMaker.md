@@ -261,7 +261,7 @@ $("#domoAge").val("");
 - Here's one possibility for a completed version you can look at as an example: https://domomaker-acjvks-2205.herokuapp.com/
 - For this part, you will be:
     - A) adding a new attribute to one of the models AND
-    - B) adding a new feature to the app (such as a delete button, or a new page to render
+    - B) adding a new feature to the app (such as a delete button, or a new page to render)
 
 ### Tips
 - "A" above should be pretty straightforward- here are some recommendations:
@@ -272,6 +272,13 @@ $("#domoAge").val("");
     - verify that you can still make Domos and that this new attribute is being created by checking the `domos` collection in the `DomoMakerE` database in MongoDB Compass
     - now rewrite the `domoNodes` code in **client/app/maker.js** to display this new attribute
     - finally, write all of the client and server-side code necessary to display a new form field for this attribute, and to send it to the server when the **Make Domo** button is clicked
+
+<hr>
+
+![screenshot](_images/)
+
+<hr>
+
 - "B" will be trickier - a "delete domo" button would be very useful, or maybe a page that shows all of the users
   - To add event handling to a React component:
     - use the `onClick` attribute like this `onClick={handleClick}`, and then create the `handleClick()` function normally
