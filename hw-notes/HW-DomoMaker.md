@@ -294,6 +294,7 @@ const handleDeleteClick = e => {
 
 - You will need to create a new endpoint (for example **/delete-domo**) - this means you will have to pass body data that includes the current value of `_csrf` everytime you call this new endpoint so that only a logged-in user can delete domos
 - One issue with this is that Postman won't be very helpful for debugging because of the need for the `_csrf` value
+- You will also need to write a `deleteDomo` function in **server/controllers/Domo.js**
 
 <hr>
 
