@@ -280,11 +280,20 @@ $("#domoAge").val("");
     - use the `onClick` attribute like this `onClick={handleClick}`, and then create the `handleClick()` function normally
     - if there are parameters to pass along, you could wrap `handleClick` above in an anonymous function like this `onClick={()=>handleClick(args)}`, OR
     - store the parameters as attributes on the component, and then access them on the event handler function with something like this `e.currentTarget.getAttribute('attributeName')`
-  - You will likely need to create a new endpoint (for example, **/all-users** or **/delete-domo**) - this means you will have to pass body data that includes the current value of `_csrf` everytime you call this new endpoint
-  - One issue with this is that Postman won't be very helpful for debugging because of the need for the `_csrf` value
-  - If you are using `jQuery.ajax()` to call the new endpoint from the client-side:
-    - you can grab the `_csrf` value from the hidden form field using `const _csrf = document.querySelector("some-selector").value;`
-    - and then pass the token along with any other data like this `const postData = "_csrf=Z6vP0rP...&anotherVariable=anotherValue&...";`
+    - the client-side function to call the `/delete-domo` endpoint (to be written by you) can look something like this
+
+```js
+const handleDeleteClick = e => {
+  const domoId = ...
+  const _csrf = ... // use `document.querySelector()` to get this value
+  const deleteData = `_csrf=${_csrf}&domoId=${domoId}`;
+  // use this helper - sendAjax(type, action, data, success) 
+  sendAjax('DELETE', '/delete-domo', deleteData, loadDomosFromServer);
+};
+```
+
+- You will need to create a new endpoint (for example, **/all-users** or **/delete-domo**) - this means you will have to pass body data that includes the current value of `_csrf` everytime you call this new endpoint so that only a logged-in user can delete domos
+- One issue with this is that Postman won't be very helpful for debugging because of the need for the `_csrf` value
 
 <hr>
 
