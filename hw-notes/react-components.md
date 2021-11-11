@@ -51,7 +51,7 @@ window.onload = init;
 
 - run the build script - `npm run buildExample1`
 - look at **hosted/exampleBundle1.js** to see the transpiled code
-- `npm start` to see the results
+- `npm run nodemon` to see the results
 - "View Source" in the browser
 - "Inspect Elements" in the browser
 - React is running on the client-side, and updating the UI dynamically
@@ -93,7 +93,7 @@ window.onload = init;
 
 - `npm run buildExample2`
 - look at **hosted/exampleBundle2.js** to see the transpiled code
-- `npm start`
+- `npm run nodemon`
 - http://localhost:3000/example2
 - "View Source" in the browser
 - "Inspect Elements" in the browser
@@ -143,7 +143,7 @@ window.onload = init;
 
 - `npm run buildExample3`
 - look at **hosted/exampleBundle3.js** to see the transpiled code
-- `npm start`
+- `npm run nodemon`
 - http://localhost:3000/example3
 
 - now load some data
