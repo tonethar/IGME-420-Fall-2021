@@ -63,7 +63,7 @@
 - *drag and drop* files into GitBash (or Terminal) to have their file paths typed for you
 - Editing what you've already typed on a line:
   - *ctrl-c* to cancel what you've typed
-  - *ctrl-u* to clear up to the beginning of the line
+  - *ctrl-u* to clear up to the beginning
   - *ctrl-w* to delete a single word
 
 
