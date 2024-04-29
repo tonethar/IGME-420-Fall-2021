@@ -61,6 +61,12 @@
 - *up arrow* - to view previously typed commands (continue pressing up arrow to cycle through command history, the down arrow goes forward through the history)
 - *tab key* - for autocompletion of partially typed file names
 - *drag and drop* files into GitBash (or Terminal) to have their file paths typed for you
+- Editing what you've already typed on a line:
+  - *ctrl-c* to cancel what you've typed
+  - *ctrl-u* to clear up to the beginning of the line
+  - *ctrl-w* to delete a single word
+
+
 
 ### III-B. Git Commands
 
